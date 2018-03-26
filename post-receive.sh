@@ -31,7 +31,7 @@ STDIN=$(cat <&0)
 REF1=$(echo $STDIN|cut -d ' ' -f 1)
 
 # Fetch last commit message and format output
-MSG=$(git log --pretty=format:$GIT_MSG_TEMPLATE $REF1..HEAD)
+MSG=$(git log --pretty=format:"$GIT_MSG_TEMPLATE" $REF1..HEAD)
 
 # template for MS-Teams message cards
 # https://docs.microsoft.com/en-us/outlook/actionable-messages/actionable-messages-via-connectors
