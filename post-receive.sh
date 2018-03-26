@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This post-recive hook can be used on server of a gogs or gitea
+# This post-receive hook can be used on server of a gogs or gitea
 # installation to send information about new commits into a MS-Teams
 # channel.
 #
